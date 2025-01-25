@@ -27,12 +27,14 @@ public class ProductCatelogue extends AbstractComponents{
 	By productsBy = By.cssSelector(".card-body");
 	By addToCart = By.cssSelector(".btn.w-10.rounded");
 	By  toastMsg = By.cssSelector("#toast-container"); 
-	
+	By viewButton = By.cssSelector(".btn.w-40.rounded");
 	
 	public List<WebElement> getProducts() {
 		waitForElementToAppear(productsBy);
 		return proucts;
 	}
+	
+	
 	
 	public WebElement getProductByName(String productName) {
 		WebElement prod = getProducts().stream()
@@ -53,7 +55,11 @@ public class ProductCatelogue extends AbstractComponents{
 		return driver.getCurrentUrl();
 	}
 	
-	
-	
-
+	public ViewAnItemPage viewItem(String productName) throws InterruptedException {
+		WebElement prod = getProductByName(productName);
+		prod.findElement(viewButton).click();
+		Thread.sleep(2000);
+		ViewAnItemPage vai = new ViewAnItemPage(driver);
+		return vai;
+	}
 }
