@@ -1,0 +1,17 @@
+<suite name="Suite">
+    <groups>
+        <run>
+            <include name="Sanity" />
+        </run>
+    </groups>
+    <test thread-count="5" name="ErrorValidation in Login">
+        <classes>
+            <class name="companyname.Framework.ErrorValidationTest" />
+        </classes>
+    </test>
+    <test thread-count="5" name="Completeworkflow in cart">
+        <classes>
+            <class name="companyname.Framework.LandingpageTest" />
+        </classes>
+    </test>
+</suite>

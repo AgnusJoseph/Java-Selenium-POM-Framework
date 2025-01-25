@@ -1,0 +1,17 @@
+<suite  parallel ="tests" name="Suite">
+	<listeners>
+        <listener class-name="companyname.TestComponents.Listeners"/>
+    </listeners>
+	<test thread-count="5" name="ErrorValidation in Login">
+		<classes>
+			<class name="companyname.Framework.ErrorValidationTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Completeworkflow in cart">
+		<classes>
+			<class name="companyname.Framework.LandingpageTest" />
+		</classes>
+	</test>
+</suite> <!--
+Suite -->

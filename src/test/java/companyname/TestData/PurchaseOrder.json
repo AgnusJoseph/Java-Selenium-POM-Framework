@@ -1,0 +1,21 @@
+[
+	{
+		"email":"agnusjosephh@gmail.com",
+		"password":"Rahulshettyacademy@123",
+		"productName":"IPHONE 13 PRO",
+		"cvv":"771",
+		"Name":"Test Dataa",
+		"coun":"An",
+		"Country":"Angola"
+	},
+	
+	{
+		"email":"agnusjosephh@gmail.com",
+		"password":"Rahulshettyacademy@123",
+		"productName":"BANARSI SAREE",
+		 "cvv":"101",
+		 "Name":"Test Datab",
+		 "coun":"Ind",
+		 "Country":"India"
+	}	
+]
